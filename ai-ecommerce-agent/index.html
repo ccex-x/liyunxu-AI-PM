@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>首页</title>
+    <link rel="shortcut icon" href="static/images/chaoxin.jpg" type="image/x-icon"/>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            font-family: "楷体";
+        }
+
+        header {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://images.pexels.com/photos/1083822/pexels-photo-1083822.jpeg?cs=srgb&dl=pexels-lisa-1083822.jpg&fm=jpg);
+            height: 100vh;
+            background-size: cover;
+            background-position: center;
+        }
+
+        ul {
+            float: right;
+            list-style-type: none;
+            margin: 25px;
+        }
+
+        ul li {
+            display: inline-block;
+        }
+
+        ul li a {
+            text-decoration: none;
+            color: #fff;
+            padding: 5px 20px;
+            border: 1px solid transparent;
+            transition: .6s ease;
+            border-radius: 20px;
+        }
+        #sub{
+            text-decoration: none;
+            color: #fff;
+            padding: 5px 20px;
+            border: 1px solid transparent;
+            transition: .6s ease;
+            border-radius: 20px;
+        }
+
+        ul li form a:hover{
+            background-color: #fff;
+            color: #000;
+        }
+        ul li a:hover {
+            background-color: #fff;
+            color: #000;
+        }
+
+        ul li.active a {
+            background-color: #fff;
+            color: #000;
+        }
+
+        .title {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .title h1 {
+            background: -webkit-linear-gradient(#333, #eee);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-size: 100px;
+            font-family: Century Gothic;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="main">
+            <ul>
+                <li class="active"><a href="index.html">首页</a></li>
+                <li><a href="jieshao.html">项目简介&成绩预测</a></li>
+                <li><a href="data.html">数据成果展示</a></li>
+                <li><a href="weilai.html">项目分析及未来规划</a></li>
+            </ul>
+        </div>
+        <div class="title">
+            <h1><span style="color: crimson;"></span>
+                你要悄悄拔尖
+                <br>然后惊艳所有人</br></h1>
+        </div>
+    </header>
+</body>
+
+</html>

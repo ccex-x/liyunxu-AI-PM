@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>项目经历 | 李云旭</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">李云旭</a>
+            <ul class="nav-menu">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="education.html">教育背景</a></li>
+                <li><a href="experience.html">工作经历</a></li>
+                <li><a href="projects.html" class="active">项目经历</a></li>
+                <li><a href="skills.html">专业技能</a></li>
+                <li><a href="awards.html">奖项荣誉</a></li>
+                <li><a href="contact.html">联系方式</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <section class="page-header">
+        <h1>项目经历</h1>
+        <p>从0到1的产品设计与落地实践</p>
+    </section>
+
+    <section class="projects-section">
+        <div class="container">
+            <!-- 项目1：AI电商内容生成Agent系统 -->
+            <div class="project-card">
+                <div class="project-image" onclick="openProjectLightbox(0)">
+                    <img src="images/project1.png" alt="AI电商内容生成Agent系统" onerror="this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 400 250%22><rect fill=%22%231e1b4b%22 width=%22400%22 height=%22250%22/><text x=%22200%22 y=%22125%22 text-anchor=%22middle%22 fill=%22%236366f1%22 font-size=%2220%22>AI电商内容生成系统</text></svg>'">
+                    <div class="project-image-overlay">
+                        <span class="zoom-icon">🔍</span>
+                        <span class="zoom-text">点击查看大图</span>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h3>基于Dify的AI电商内容生成Agent系统</h3>
+                    <span class="project-role">项目负责人 | 2024.08-2025.03</span>
+                    <div class="project-tags">
+                        <span>Dify</span>
+                        <span>Llama3</span>
+                        <span>LoRA</span>
+                        <span>Python</span>
+                    </div>
+                    <ul class="project-details">
+                        <li>✅ 全流程统筹：从0到1设计并落地AI内容生成Agent系统，支撑5万+ SKU规模化内容生成</li>
+                        <li>✅ 模型选型优化：Llama3+LoRA微调方案，推理成本降低20%</li>
+                        <li>✅ Prompt结构化：15+电商内容场景，JSON输出结构化符合率99%+</li>
+                        <li>✅ 数据闭环：用户满意度稳定在93%+</li>
+                    </ul>
+
+                    <div class="project-links">
+                        <a href="https://forever-slide-link.lovable.app/" class="btn btn-primary" target="_blank">🔗 查看完整项目</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 项目2：教育数据智能分析平台 -->
+            <div class="project-card">
+                <div class="project-image" onclick="openProjectLightbox(1)">
+                    <img src="images/project2.png" alt="教育数据智能分析平台" onerror="this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 400 250%22><rect fill=%22%231e1b4b%22 width=%22400%22 height=%22250%22/><text x=%22200%22 y=%22125%22 text-anchor=%22middle%22 fill=%22%236366f1%22 font-size=%2220%22>教育数据分析平台</text></svg>'">
+                    <div class="project-image-overlay">
+                        <span class="zoom-icon">🔍</span>
+                        <span class="zoom-text">点击查看大图</span>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h3>教育数据智能分析平台</h3>
+                    <span class="project-role">项目负责人 | 2022.03-2023.12</span>
+                    <div class="project-tags">
+                        <span>K-Means</span>
+                        <span>随机森林</span>
+                        <span>Echarts</span>
+                        <span>Flask</span>
+                    </div>
+                    <ul class="project-details">
+                        <li>✅ 全流程统筹：打造教培场景教育数据智能分析工具</li>
+                        <li>✅ 精准调研：访谈100+教师与学生，输出结构化需求分析报告</li>
+                        <li>✅ 产品设计：学习行为分析、成绩预测、可视化看板三大核心模块</li>
+                        <li>✅ 成果落地：学生成绩平均提升12%，获全国竞赛三等奖，软件著作权2项</li>
+                    </ul>
+
+                    <div class="project-links">
+                        <a href="ai-ecommerce-agent/index.html" class="btn btn-primary" target="_blank">🔗 查看完整项目</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 项目3：AI宠物吃播视频生成工作流 -->
+            <div class="project-card video-project-card">
+                <div class="project-video-container">
+                    <div class="video-wrapper">
+                        <video id="projectVideo" poster="images/project3-poster.png">
+                            <source src="videos/project3-demo.mp4" type="video/mp4">
+                            您的浏览器不支持视频播放
+                        </video>
+                        <div class="video-play-button" onclick="toggleVideoPlay()">
+                            <svg class="play-icon" viewBox="0 0 100 100">
+                                <circle cx="50" cy="50" r="45" fill="rgba(99, 102, 241, 0.9)" stroke="white" stroke-width="3"/>
+                                <polygon points="38,30 85,50 38,70" fill="white"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="video-hint">
+                        <span>🎬 点击播放演示视频</span>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h3>基于Coze的AI宠物吃播视频生成工作流</h3>
+                    <span class="project-role">独立开发者 | 2025.01-2025.02</span>
+                    <div class="project-tags">
+                        <span>Coze</span>
+                        <span>工作流</span>
+                        <span>AI视频生成</span>
+                        <span>自动化</span>
+                    </div>
+                    <ul class="project-details">
+                        <li>✅ 工作流设计：基于Coze平台搭建宠物吃播视频自动化生成流程</li>
+                        <li>✅ 多模态融合：整合图像识别、文案生成、视频合成等多环节</li>
+                        <li>✅ 固定形象生成：通过动物图片+食物图片，自动生成宠物吃播场景</li>
+                        <li>✅ 效率提升：视频制作时间从小时级缩短至分钟级</li>
+                    </ul>
+
+                    <!-- 项目图片展示 -->
+                    <div class="project-images-gallery">
+                        <div class="project-gallery-item" onclick="openProjectLightbox(2)">
+                            <img src="images/project3-workflow.png" alt="工作流设计" onerror="this.style.display='none'">
+                            <div class="gallery-item-overlay">
+                                <span class="zoom-icon">🔍</span>
+                                <span class="zoom-text">查看工作流</span>
+                            </div>
+                            <div class="gallery-item-caption">工作流设计界面</div>
+                        </div>
+                        <div class="project-gallery-item" onclick="openProjectLightbox(3)">
+                            <img src="images/project3-test.png" alt="测试运行" onerror="this.style.display='none'">
+                            <div class="gallery-item-overlay">
+                                <span class="zoom-icon">🔍</span>
+                                <span class="zoom-text">查看测试</span>
+                            </div>
+                            <div class="gallery-item-caption">测试运行界面</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 项目图片放大弹窗 -->
+    <div id="project-lightbox" class="lightbox" onclick="closeProjectLightbox()">
+        <span class="lightbox-close" onclick="closeProjectLightbox()">&times;</span>
+        <div class="lightbox-content">
+            <img id="project-lightbox-img" src="" alt="">
+            <div class="lightbox-caption" id="project-lightbox-caption"></div>
+        </div>
+        <div class="lightbox-nav lightbox-prev" onclick="prevProjectImage(event)">&#10094;</div>
+        <div class="lightbox-nav lightbox-next" onclick="nextProjectImage(event)">&#10095;</div>
+    </div>
+
+    <footer class="footer">
+        <p>© 2026 李云旭 | AI产品经理个人展示网站</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script>
+        // 项目图片数组
+        const projectImages = [
+            { src: 'images/project1.png', caption: 'AI电商内容生成Agent系统' },
+            { src: 'images/project2.png', caption: '教育数据智能分析平台' },
+            { src: 'images/project3-workflow.png', caption: '宠物吃播工作流设计界面' },
+            { src: 'images/project3-test.png', caption: '宠物吃播测试运行界面' }
+        ];
+
+        let currentProjectImageIndex = 0;
+
+        // 打开图片放大
+        window.openProjectLightbox = function(index) {
+            currentProjectImageIndex = index;
+            const lb = document.getElementById('project-lightbox');
+            const img = document.getElementById('project-lightbox-img');
+            const cap = document.getElementById('project-lightbox-caption');
+            if (lb && img && cap) {
+                img.src = projectImages[index].src;
+                cap.textContent = projectImages[index].caption;
+                lb.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            }
+        };
+
+        // 关闭图片放大
+        window.closeProjectLightbox = function() {
+            const lb = document.getElementById('project-lightbox');
+            if (lb) {
+                lb.classList.remove('active');
+                document.body.style.overflow = 'auto';
+            }
+        };
+
+        // 上一张
+        window.prevProjectImage = function(e) {
+            if (e) e.stopPropagation();
+            currentProjectImageIndex = (currentProjectImageIndex - 1 + projectImages.length) % projectImages.length;
+            updateProjectImage();
+        };
+
+        // 下一张
+        window.nextProjectImage = function(e) {
+            if (e) e.stopPropagation();
+            currentProjectImageIndex = (currentProjectImageIndex + 1) % projectImages.length;
+            updateProjectImage();
+        };
+
+        // 更新图片
+        function updateProjectImage() {
+            const img = document.getElementById('project-lightbox-img');
+            const cap = document.getElementById('project-lightbox-caption');
+            if (img && cap) {
+                img.style.opacity = '0';
+                setTimeout(() => {
+                    img.src = projectImages[currentProjectImageIndex].src;
+                    cap.textContent = projectImages[currentProjectImageIndex].caption;
+                    img.style.opacity = '1';
+                }, 150);
+            }
+        }
+
+        // 视频播放控制
+        window.toggleVideoPlay = function() {
+            const video = document.getElementById('projectVideo');
+            const playButton = document.querySelector('.video-play-button');
+            
+            if (video.paused) {
+                video.play();
+                playButton.style.opacity = '0';
+                playButton.style.pointerEvents = 'none';
+            } else {
+                video.pause();
+                playButton.style.opacity = '1';
+                playButton.style.pointerEvents = 'auto';
+            }
+        };
+
+        // 视频播放结束后显示播放按钮
+        document.addEventListener('DOMContentLoaded', function() {
+            const video = document.getElementById('projectVideo');
+            if (video) {
+                video.addEventListener('ended', function() {
+                    const playButton = document.querySelector('.video-play-button');
+                    playButton.style.opacity = '1';
+                    playButton.style.pointerEvents = 'auto';
+                });
+            }
+        });
+
+        // 键盘控制
+        document.addEventListener('keydown', function(e) {
+            const lb = document.getElementById('project-lightbox');
+            if (lb && lb.classList.contains('active')) {
+                if (e.key === 'Escape') closeProjectLightbox();
+                if (e.key === 'ArrowLeft') prevProjectImage(e);
+                if (e.key === 'ArrowRight') nextProjectImage(e);
+            }
+        });
+    </script>
+</body>
+</html>

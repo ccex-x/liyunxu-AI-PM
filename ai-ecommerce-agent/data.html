@@ -1,0 +1,91 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>数据成果展示</title>
+    <link rel="shortcut icon" href="static/images/chaoxin.jpg"  type="image/x-icon"/>
+    <script type="text/javascript" src="static/js/jquery.js"></script>
+    <script type="text/javascript" src="static/js/echarts.min.js"></script>
+    <script type="text/javascript" src="static/js/jquery.liMarquee.js"></script>
+    <script type="text/javascript" src="static/js/jquery.cxselect.min.js"></script>
+    <link rel="stylesheet" href="static/css/comon0.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/echarts@5.2.2/dist/echarts.min.js"></script>
+</head>
+<body>
+    <div style="background:#000d4a url(static/images/bz3.jpg) center top;">
+        <div class="loading">
+            <div class="loadbox"> <img src="static/images/loading.gif"> 页面加载中... </div>
+        </div>
+        <div class="back"></div>
+        <div class="head">
+            <div class="JavaS">睡大觉摆大烂</div>
+            <div class="weather"><span id="showTime"></span></div>
+            <h1>学生数据分析大展板</h1>
+        </div>
+        <script>
+            var t = null;
+            t = setTimeout(time, 1000);
+            function time() {
+                clearTimeout(t);
+                dt = new Date();
+                var y = dt.getFullYear();
+                var mt = dt.getMonth() + 1;
+                var day = dt.getDate();
+                var h = dt.getHours();
+                var m = dt.getMinutes();
+                var s = dt.getSeconds();
+                document.getElementById("showTime").innerHTML = y + "年" + mt + "月" + day + "日" + h + "时" + m + "分" + s + "秒";
+                t = setTimeout(time, 1000);
+            }
+        </script>
+        <div class="mainbox">
+            <ul class="clearfix">
+                <li>
+                    <div class="boxall" style="height:400px;">
+                        <div class="alltitle">章数与考试成绩关系分析</div>
+                        <div class="navboxall" id="echart7"></div>
+                    </div>
+                    <div class="boxall" style="height:260px;">
+                        <div class="alltitle">课程参与度分析</div>
+                        <div class="navboxall" id="echart3"></div>
+                    </div>
+                    <div class="boxall" style="height:260px;">
+                        <div class="alltitle">整体画像 - 学历分布</div>
+                        <div class="navboxall" id="echart1"></div>
+                    </div>
+                </li>
+                <li>
+                    <div class="boxall" style="height:230px">
+                        <div class="alltitle">各学院各年级学生人数统计</div>
+                        <div class="navboxall" id="echart6"></div>
+                    </div>
+                    <div class="boxall" style="height:350px">
+                        <div class="alltitle">学习能力分析</div>
+                        <div class="navboxall" id="echart4"></div>
+                    </div>
+                    <div class="boxall" style="height:340px">
+                        <div class="alltitle">课堂活动参与度分析</div>
+                        <div class="navboxall" id="echart5"></div>
+                    </div>
+                </li>
+                <li>
+                    <div class="boxall" style="height:240px">
+                        <div class="alltitle">学生数量与平均成绩分析</div>
+                        <div class="navboxall" id="echart8"></div>
+                    </div>
+                    <div class="boxall" style="height:300px">
+                        <div class="alltitle">学习时间与学习成绩分析</div>
+                        <div class="navboxall" id="echart9"></div>
+                    </div>
+                    <div class="boxall" style="height:380px">
+                        <div class="alltitle">学生行为分析</div>
+                        <div class="navboxall" id="echart2"></div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <script type="text/javascript" src="static/js/js.js"></script>
+</body>
+</html>
